@@ -1,8 +1,8 @@
 /*
 Conditional Lab
 
-FIXME1: Write programmer information
-FIXME2: Today's Date
+updated by: Kyle Schuknecht
+Date: 2/28/24
 
 Program finds statistical values of two given numbers using user-defined functions.
 

@@ -1,8 +1,8 @@
 /*
     Loops Lab
-    Updated By: FIXME1
+    Updated By: Kyle Schuknecht
     CSCI 111
-    Date: FIXME2
+    Date: 2/28/24
 
     Program prints geometric shapes of given height with * using loops
 */
