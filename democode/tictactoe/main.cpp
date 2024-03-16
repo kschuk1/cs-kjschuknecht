@@ -16,7 +16,9 @@ void printDisplay(char board[3][3]){
 }
 
 int main(){
-    char board [3][3] = {{' ',' ',' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
+    char board [3][3] = {{' ',' ',' '}, 
+                        {' ', ' ', ' '}, 
+                        {' ', ' ', ' '} };
     char player 
     for(int i=0; i< 9; i++){
         printDisplay(board);

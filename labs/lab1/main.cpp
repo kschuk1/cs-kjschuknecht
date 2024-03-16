@@ -15,26 +15,30 @@ using namespace std; //resolve cout, cin, and endl names
 //main entry point of the program
 int main()
 {
-    string name = "";
-
-    cout << "Please enter your name" << endl; //FIXME3
-    cin >> name; //FIXME4: prompt user to enter their name and store the value into name variable using getline function
-    
-    cout << "Nice to meet you, " << name << endl; //FIXME5: greet the name using the variable as the following output
-    //must output: Nice meeting you, <name>!
-
+    //FIXME3: declare a variable to store name #fixed
+    string yourname;
+    //FIXME4: prompt user to enter their name and store the value in variable#fixed
+    cout << "what is your name? ";
+    getline(cin, yourname);
+    //FIXME5: greet the name using the variable as the following output#fixed
+    //must output: Nice meeting you, <name>!#fixed
+    cout << "Nice meeting you, " << yourname << endl;
     cout << "Hope you like my Tom & Jerry ASCII art...\n\n";
-
-    string line1 = "  |\\_/|   **********************    (\\_/)\n";
+    string line1;
+    line1 = "  |\\_/|   **********************   (\\_/)\n";
     cout << line1;
+    line1 = " / @ @ \\  *      ASCII Lab     *  (='.'=)\n";
+    cout << line1;
+    line1 = "( > 0 < ) *    By kyle schuknecht   *  (\")_(\")\n";
+    cout << line1;
+    line1 = "  >>x<<   *       CSCI 111     *\n";
+    cout << line1;
+    line1 = "  / 0 \\   **********************\n";
+    cout << line1;
+   
 
-    string line2 = " /  @  @ \\    *   ASCII Lab   *   (='.'=)\n"; 
-    cout << line2; //FIXME6: use variable to print the second line line of the graphic
-    string line3 = "( >   0  <   )       *              By: Kyle      * 	( \" )_( \" )\n";//FIXME7: print the third line of the graphics
- 
-
-    cout << "\nGood bye... hit enter to exit the program: " << '\n';
+    cout << "\nGood bye... hit enter to exit the program:" << '\n';
     
-
-    return 0;
+    getchar();
+    return 0; //exit program by returning 0 status to the system
 }
