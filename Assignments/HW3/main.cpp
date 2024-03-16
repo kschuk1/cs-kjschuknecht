@@ -1,3 +1,8 @@
+/*
+created by Kyle Schuknecht
+3/14/2024
+hw3
+*/
 #include <iostream>
 #include <cmath>
 #include <cassert>

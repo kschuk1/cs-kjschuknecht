@@ -1,5 +1,9 @@
-// kyle schuknecht
-// triangle hw
+/*
+created by Kyle Schuknecht
+2/15/2024
+triangle hw
+*/
+
 
 #include <iostream>
 #include <cmath>

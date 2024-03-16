@@ -1,5 +1,6 @@
 /*
-Kyle Schuknecht
+created by Kyle Schuknecht
+2/7/2024
 Hangman
 */
 
