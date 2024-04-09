@@ -39,7 +39,7 @@ int main ()
     cout << "The perimeter is " << var << '\n';
 
     cout << " Press enter to exit.";
-     cin get();
+     //cin >> get();
      getchar();
      return 0;
      

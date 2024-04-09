@@ -1,8 +1,8 @@
 /*
 Kattis - Hissing Microphone Problem
 
-By: FIXME1
-Date: FIXME2
+By: Kyle Schuknecht
+Date: 3/12/24
 
 Hissing Microphone Problem Statement: https://open.kattis.com/problems/hissingmicrophone
 Algorithm steps:

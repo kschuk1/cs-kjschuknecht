@@ -13,7 +13,7 @@ using namespace std;
 double addnums(double&, double&);
 double multiplynums(double&, double&);
 double divdenums(double&, double&);
-double reamaindernums(double&, double&);
+double remaindernums(double&, double&);
 double subtractnums(double&, double&);
 double exponentnums(double&, double&);
 double squarerootnum(double&);
@@ -167,3 +167,4 @@ void test()
     }
 
 }
+return 0;
