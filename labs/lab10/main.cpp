@@ -53,9 +53,22 @@ int main(int argc, char* argv[]) {
 }
 
 void readData(vector<int> & numbers, const string inputFileName) {
-    // FIXME3: Open inputFileName for reading data
-    // read the data until eof marker and store each num into numbers vector
-    int num;
+    ifstream file;
+    file.open(inputFileName, file.in | file.binary | file.ate);
+
+    if (!file.is_open()) 
+        cout << "failed to open " << inputFileName << '\n';
+    else {
+        file.seekg(0, file.beg);
+        string word;
+        while(getline(file, word)) {
+            // cout << word << endl;
+            numbers.push_back(stoi(word));
+        }
+        // for(int i: numbers)
+        //     cout << i << endl;
+        file.close();
+    }
 }
 
 void writeData(const vector<int> & numbers) {
@@ -66,6 +79,21 @@ void writeData(const vector<int> & numbers) {
     2. Store and use the file name to open the file in write mode
     3. Write output as shown in output.txt file with proper formatting using iomanip
     */
+     string outFile;
+    cout << "Enter output file name: ";
+    getline(cin, outFile);
+
+    ofstream fout;
+    fout.open(outFile);
+     for(int i: numbers)
+         fout << "list of numbers: " << i << " ";
+         fout << endl << endl;
+         fout << setw(50) << setfill('=') << " "endl;
+         fout << setw(20) << left << "Statistical Results" << endl;
+         fout << "min = "<< findMin(numbers)<< endl;
+
+
+     
 }
 
 int findMax(const vector<int> & nums) {
@@ -76,6 +104,11 @@ int findMax(const vector<int> & nums) {
 }
 
 int findMin(const vector<int> & nums) {
+    int min = 1000000000;
+    for(int i: nums){
+        if(i < min)
+        min = nums;
+    }
     // FIXME5 - implement function to find and return min value from nums vector
     return 0;
 } 
