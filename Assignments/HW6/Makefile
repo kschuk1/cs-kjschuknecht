@@ -1,17 +1,23 @@
+# The Makefile is analogous to running:
+# g++ -g -Wall -std=c++17 -o ex.out main.cpp && ./ex.out
+
 # compiler name
+
 CXX = g++
-# c++ compiler flags
+
+# C++ compiler flags
+# -c : just do preprocess; compile and assemble into object files
 # -g : adds debugging information to the executable file
 # -Wall : turns on most, but not  all, compiler warnings
-# -std=C++17 : uses c++17 standard
+# -std=c++17 : uses c++17 standard
 # put all the required flags separated by space
 CXXFLAGS = -c -g -Wall -std=c++17
 
 # the build target executable file; .exe is not required
-PROGRAM = pointers.exe
+PROGRAM = ex.out
 
-# list .cpp files separated by space
-CPPFILES = pointers.cpp
+# list all .cpp files separated by space
+CPPFILES = main.cpp
 
 # make all rule/default rule that'll be run when we run "make"
 # first compile each file to object file
@@ -24,4 +30,6 @@ all:
 # delete object and binary files
 clean:
 	rm -f $(PROGRAM) *.o
-	
+
+run:
+	./ex.out

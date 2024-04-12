@@ -63,14 +63,14 @@ int main()
         printf("(x1, y1) = (%d, %d)\n", x1, y1);
 
         cout << "Enter a second point in the form (x, y): ";
-        // FIXME3 - Read/parse the second point and store data into variables x2 and y2 
+        // FIXME3 - Read/parse the second point and store data into variables x2 and y2
         cin >> ch >> x2 >> ch >> y2 >> ch;
         printf("(x2, y2) = (%d, %d)\n", x2, y2);
         // FIXME4 - Call test function 
         test();
         // FIXME5 - call findDistance function passing proper arguments
         findDistance(x1, y1, x2, y2);
-        // FIXME6 – Using printf function display the returned distance with proper description 
+        // FIXME6 – Using printf function display the returned distance with proper description
         double result;
         result = findDistance(x1, y1, x2, y2);
         printf("The distance between point 1 and pont 2 is: %f", result);
