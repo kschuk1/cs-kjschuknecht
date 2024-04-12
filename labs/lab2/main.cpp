@@ -3,9 +3,6 @@ circle lab
 Kyle Schuknecht
 Date 2/12/2014
 */
-
-
- 
 #include <iostream>
 #include <string> 
 #include <cmath> 
