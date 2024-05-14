@@ -62,9 +62,9 @@ double game()
     string v2;
     string v3;
     clear();
-    // create the word they're trying to guess
+    
     getword(word);
-    // set answer to the proper size
+    
     answer.resize(word.length());
     vic = 0;
     v = 0;
@@ -73,7 +73,7 @@ double game()
     clearanswer(answer);
     vector<string> v1(1);
     v1.at(0) = answer;
-    // have them try to guess
+    
     cout << "there are " << word.length() << " letters.\n";
     while (vic == 0)
     {
@@ -103,8 +103,7 @@ double game()
                 vic = 1;
             }
         }
-        // if the letter they entered wasn't in the word progress the stage,
-        // and amount of tries attempted and show what letters eliminated.
+
         else
         {
             cout << "there is no " << guess << "\n";
@@ -129,7 +128,6 @@ double game()
     }
     return 0;
 }
-// checks if they already entered that letter
 double repeat(char &guess, int &g, string &v2)
 {
     v2.resize(g);
@@ -143,7 +141,7 @@ double repeat(char &guess, int &g, string &v2)
     v2.at(g - 1) = guess;
     return 0;
 }
-// enters the letter if they got one
+
 void fillanswer(const string &word, string &answer, char &guess)
 {
     for (size_t i = 0; i < word.length(); i++)
@@ -154,7 +152,7 @@ void fillanswer(const string &word, string &answer, char &guess)
         }
     }
 }
-// sees if they got the word
+
 double guesscheck(const string &word, string &answer)
 {
     if (word == answer)
@@ -278,7 +276,7 @@ void displayelim(char &guess, int &v, string &v3)
     }
     cout << '\n';
 }
-// sets answer to ________
+
 void clearanswer(string &answer)
 {
     for (size_t x = 0; x < answer.length(); x++)
