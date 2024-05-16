@@ -1,4 +1,3 @@
-
 /*
    	Created by: Kyle Schuknecht
 	Date made: 5/10/24
@@ -264,7 +263,7 @@ void displaynoose(int &v)
         cout << "----------\n";
     }
 }
-// display wrong letters
+
 void displayelim(char &guess, int &v, string &v3)
 {
     v3.resize(v);
@@ -284,7 +283,7 @@ void clearanswer(string &answer)
         answer.at(x) = '_';
     }
 }
-// gets a random word
+
 void getword(string &word)
 {
     ifstream fin;
