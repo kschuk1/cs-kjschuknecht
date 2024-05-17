@@ -1,0 +1,18 @@
+v = randi([1.,10.]);
+num = 0;
+c = 0;
+Num=[];
+while num ~= v
+    num = input('Guess the number between 1 and 10: ');
+    if ~ismember(num,Num)
+        c = c+1;
+        Num=[Num,num];
+    end
+    if num < v
+        fprintf('Your guess (%i) is below the number \n', num)
+    elseif num > v
+        fprintf('Your guess (%i) is above the number \n', num)
+    else
+        fprintf('Congratulations, you guessed the right number !\n', v)
+    end
+end
